@@ -32,4 +32,14 @@ CREATE TABLE user_info (
 <IfModule dir_module>
     DirectoryIndex index.php index.html
 </IfModule>
+
 以上操作均在主机a上进行，在b的浏览器上输入a的ip地址就可以连接到a的网站
+# 运行实验
+主机a
+在lab2文件夹中输入命令 
+make
+sudo insmod hello-world.ko
+主机b
+注册账号并登陆
+在主机a上执行sudo dmesg查看账号密码
+
